@@ -1,6 +1,9 @@
 import React from 'react'
 import './achievements.css'
 import PBS from '../../assets/PBS_achieve.jpg'
+import ORACLE from '../../assets/Oracle_achieve.png'
+import PBS_certificate from '../../assets/PBS.pdf'
+import DataBase_certificate from '../../assets/SUBD_cert.pdf'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -16,23 +19,18 @@ const data = [
   {
     avatar: PBS,
     title: 'Phystech Business Solutions',
-    review: 'Победитель первого в России кейс-чемпионата в сфере высокотехнологичного бизнеса. Разработка алгоритма кластеризации смарт-контрактов.'
+    review: 'Победитель первого в России кейс-чемпионата в сфере высокотехнологичного бизнеса. Разработка алгоритма кластеризации смарт-контрактов.',
+    cert: PBS_certificate,
+    file_name: 'PBS_certificate.pdf'
   },
   {
-    avatar: PBS,
-    title: 'Достижение 2',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum dolorum modi ab amet quos non earum nesciunt, voluptate libero.'
+    avatar: ORACLE,
+    title: 'Oracle Databases',
+    review: 'Награда за успешное завершение финального экзамена по курсу Database Foundations Cumulative Final Exam',
+    cert: DataBase_certificate,
+    file_name: 'DataBase_certificate.pdf'
   },
-  {
-    avatar: PBS,
-    title: 'Достижение 2',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum dolorum modi ab amet quos non earum nesciunt, voluptate libero.'
-  },
-  {
-    avatar: PBS,
-    title: 'Достижение 2',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda harum dolorum modi ab amet quos non earum nesciunt, voluptate libero.'
-  },
+  
 ]
 
 
@@ -49,7 +47,7 @@ const Achievements = () => {
       pagination={{ clickable: true }}
       >
         {
-          data.map(({avatar, title, review}, index) => {
+          data.map(({avatar, title, review, cert, file_name}, index) => {
             return (
               <SwiperSlide key={index} className='achievement'>
                 <div className="achievement__avatar">
@@ -57,6 +55,7 @@ const Achievements = () => {
                 </div>
                 <h5 className='cliend__name'>{title}</h5>
                 <small className='achievement__review'>{review}</small>
+                <a href={cert} download={file_name} className='btn btn__cert' >Скачать сертификат</a>
               </SwiperSlide>
             )
           })

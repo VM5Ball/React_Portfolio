@@ -24,8 +24,8 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Get In Touch</h5>  
-      <h2>Contact Me</h2>
+      <h5>Свяжитесь со мной</h5>  
+      <h2>Контакты</h2>
 
       <div className="container contact__container">
         <div className="contact__options">
@@ -43,9 +43,9 @@ const Contact = () => {
         </article>  
         </div>  
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="5" placeholder='Your Message' required></textarea>
+          <input type="text" name='name' placeholder='Ваше полное имя' required />
+          <input type="email" name='email' placeholder='Ваш email' required />
+          <textarea name="message" rows="5" placeholder='Ваше сообщение' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
       </div>
