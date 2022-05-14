@@ -33,20 +33,20 @@ const Contact = () => {
           <MdOutlineEmail className='contact__option-icon'/>
           <h4>Email</h4>
           <h5>vladimir-markovich@mail.ru</h5>
-          <a href="mailto:vladimir-markovich@mail.ru" target="_blank">Send a message</a>
+          <a href="mailto:vladimir-markovich@mail.ru" target="_blank">Написать</a>
         </article> 
         <article className="contact__option">
           <FaTelegramPlane className='contact__option-icon'/>
           <h4>Telegram</h4>
           <h5>@vm5_ball</h5>
-          <a href="https://t.me/vm5_ball" target="_blank">Send a message</a>
+          <a href="https://t.me/vm5_ball" target="_blank">Написать</a>
         </article>  
         </div>  
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Ваше полное имя' required />
           <input type="email" name='email' placeholder='Ваш email' required />
           <textarea name="message" rows="5" placeholder='Ваше сообщение' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+          <button type='submit' className='btn btn-primary'>Отправить сообщение</button>
         </form>
       </div>
     </section>
