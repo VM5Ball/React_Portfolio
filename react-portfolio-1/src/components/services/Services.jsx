@@ -1,6 +1,6 @@
 import React from 'react'
 import './services.css'
-import {BsCheckLg} from 'react-icons/bs'
+import {TiTick} from 'react-icons/ti'
 
 const data_python = [
   {
@@ -21,6 +21,9 @@ const data_python = [
   {
     skill: 'Хен-функции, хкширование данных, хеш-таблицы'
   },
+  {
+    skill: 'Pandas, SQLAlchemy'
+  },
 ]
 
 const data_sql = [
@@ -28,7 +31,13 @@ const data_sql = [
     skill: 'Типы моделей баз данных'
   },
   {
-    skill: 'Составление логической и реляционной моделей'
+    skill: 'Логическая модель'
+  },
+  {
+    skill: 'Реляционная модель'
+  },
+  {
+    skill: 'Oracle, SQLite'
   },
   {
     skill: 'Объекты, атрибуты, связи'
@@ -45,6 +54,9 @@ const data_sql = [
   {
     skill: 'ROLLUP, CUBE, GROUPING SETS, SUBQUERRIES'
   },
+  {
+    skill: 'UNION, INTERSECT, MINUS'
+  },
 ]
 
 const data_DS = [
@@ -53,6 +65,18 @@ const data_DS = [
   },
   {
     skill: 'Математическое ожидание'
+  },
+  {
+    skill: 'Математическая статистика'
+  },
+  {
+    skill: 'Статистическая проверка гипотез'
+  },
+  {
+    skill: 'Нормальное распределение'
+  },
+  {
+    skill: 'Доверительные интервалы'
   },
   {
     skill: 'Визуализация данных на языке R'
@@ -79,7 +103,7 @@ const Services = () => {
               data_python.map(({skill}) => {
                 return (
                   <li>
-                    <BsCheckLg className='service__list-icon'/>
+                    <TiTick className='service__list-icon'/>
                     <p>{skill}</p>
                   </li> 
                 )
@@ -97,7 +121,7 @@ const Services = () => {
               data_sql.map(({skill}) => {
                 return (
                   <li>
-                    <BsCheckLg className='service__list-icon'/>
+                    <TiTick className='service__list-icon'/>
                     <p>{skill}</p>
                   </li> 
                 )
@@ -115,7 +139,7 @@ const Services = () => {
               data_DS.map(({skill}) => {
                 return (
                   <li>
-                    <BsCheckLg className='service__list-icon'/>
+                    <TiTick className='service__list-icon'/>
                     <p>{skill}</p>
                   </li> 
                 )

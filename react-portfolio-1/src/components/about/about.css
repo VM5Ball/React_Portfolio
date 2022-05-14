@@ -34,7 +34,7 @@
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
     transition: var(--transition);
 }
@@ -67,6 +67,10 @@
 
 .left_margin {
     margin-left: 1rem;
+}
+
+.text__about__me {
+    text-align: justify;
 }
 
 
