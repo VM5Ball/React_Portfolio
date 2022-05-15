@@ -4,7 +4,7 @@ import Portfolio_demo from '../../assets/Portfolio_demo.mp4'
 import ToDo from '../../assets/ToDo.mp4'
 import Tetris from '../../assets/Tetris.mp4'
 import PBS from '../../assets/PBS.mp4'
-import SUBD from '../../assets/СУБД.mp4'
+import SUBD from '../../assets/DB.mp4'
 import toothpicks from '../../assets/ToothPicks.mp4'
 
 const data = [
@@ -70,7 +70,7 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className='portfolio__item-cta'>
-                <a href={github} className='btn' target='_blank'>Github</a>
+                <a href={github} className='btn' target='_blank'>GitHub</a>
                 
               </div>
             </article>
