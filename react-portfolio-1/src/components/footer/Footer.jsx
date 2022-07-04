@@ -6,7 +6,7 @@ import {FaGithub} from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>VLADIMIR</a>
+      <a href="#" className='footer__logo'>Владимир Маркович</a>
 
       <ul className='permalinks'>
         <li><a href="#">Домой</a></li>  
@@ -19,13 +19,13 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://t.me/vm5_ball"><BsTelegram className ='icon'/></a>  
-        <a href="https://github.com/VM5Ball"><FaGithub className ='icon'/></a>
+        <a href="https://t.me/markovich_vs" target="_blank"><BsTelegram className ='icon'/></a>  
+        <a href="https://github.com/VM5Ball" target="_blank"><FaGithub className ='icon'/></a>
       </div>
 
 
       <div className="footer__copyrights">
-        <small>&copy; Vladimir Markocih. All rights reserved</small>  
+        <small>&copy; Vladimir Markovich. All rights reserved</small>  
       </div>
 
     </footer>

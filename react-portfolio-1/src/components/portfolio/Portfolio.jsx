@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 import './portfolio.css'
 import Portfolio_demo from '../../assets/Portfolio_demo.mp4'
 import ToDo from '../../assets/ToDo.mp4'
@@ -25,7 +26,7 @@ const data = [
   {
     id: 3,
     video: ToDo,
-    title: 'Мобильное приложение ToDo list',
+    title: 'ToDo list',
     github: "https://github.com/VM5Ball/ToDo-App",
     
   },
@@ -56,7 +57,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id ='portfolio'>
-      <h5>Мои последние работы</h5>
+      <h5>Мои последние проекты</h5>
       <h2>Портфолио</h2>
 
       <div className='container portfolio__container'>
@@ -66,7 +67,7 @@ const Portfolio = () => {
             return (
               <article key={id} className='portfolio__item'>
               <div className="portfolio__item-image">
-              <video src={video} width="300" height="200" controls />
+              <ReactPlayer url={video} width='100%' height={200} controls muted />
               </div>
               <h3>{title}</h3>
               <div className='portfolio__item-cta'>

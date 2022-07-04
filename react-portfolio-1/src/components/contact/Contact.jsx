@@ -38,8 +38,8 @@ const Contact = () => {
         <article className="contact__option">
           <FaTelegramPlane className='contact__option-icon'/>
           <h4>Telegram</h4>
-          <h5>@vm5_ball</h5>
-          <a href="https://t.me/vm5_ball" target="_blank">Написать</a>
+          <h5>@markovich_vs</h5>
+          <a href="https://t.me/markovich_vs" target="_blank">Написать</a>
         </article>  
         </div>  
         <form ref={form} onSubmit={sendEmail}>

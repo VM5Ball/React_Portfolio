@@ -37,7 +37,7 @@ const data = [
 const Achievements = () => {
   return (
     <section id='achievements'>
-      <h5>Мои достижения</h5>
+      <h5>Мои сертификаты</h5>
       <h2>Достижения</h2>
 
       <Swiper className='container achievements__container'

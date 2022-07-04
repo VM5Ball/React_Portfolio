@@ -32,6 +32,11 @@
     margin-bottom: 1rem;
 }
 
+.portfolio__item-video {
+    border-radius: 30;
+    align-self: center;
+}
+
 
 /* ========= MEDIA QUERIES (medium devices - tablets) ========= */
 

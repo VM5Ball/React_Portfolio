@@ -71,7 +71,7 @@ const data_DS =[
 const Experience = () => {
   return (
     <section id='experience'>
-        <h5>Инструменты, с которыми я уже работал</h5>  
+        <h5>Инструменты, с которыми я имею опыт работы</h5>  
         <h2>Мой опыт</h2>
 
         <div className="container experience__container">
