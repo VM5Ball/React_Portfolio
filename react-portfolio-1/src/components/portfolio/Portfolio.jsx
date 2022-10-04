@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 import './portfolio.css'
 import Portfolio_demo from '../../assets/Portfolio_demo.mp4'
 import ToDo from '../../assets/ToDo.mp4'
-import Tetris from '../../assets/Tetris.mp4'
+import ScyTech from '../../assets/search_demo.mov'
 import PBS from '../../assets/PBS.mp4'
 import SUBD from '../../assets/DB.mp4'
 import toothpicks from '../../assets/ToothPicks.mp4'
@@ -32,9 +32,9 @@ const data = [
   },
   {
     id: 4,
-    video: Tetris,
-    title: 'Тетрис на Python, tkinter',
-    github: "https://github.com/VM5Ball/Python_small_projects/tree/main/Tetris",
+    video: ScyTech,
+    title: 'Система поиска по электронному архиву',
+    github: "https://github.com/VM5Ball/ScyTech",
     
   },
   {
@@ -58,7 +58,7 @@ const Portfolio = () => {
   return (
     <section id ='portfolio'>
       <h5>Мои последние проекты</h5>
-      <h2>Портфолио</h2>
+      <h2>Projects</h2>
 
       <div className='container portfolio__container'>
 

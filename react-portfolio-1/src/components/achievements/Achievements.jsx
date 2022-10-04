@@ -2,8 +2,10 @@ import React from 'react'
 import './achievements.css'
 import PBS from '../../assets/PBS_achieve.jpg'
 import ORACLE from '../../assets/Oracle_achieve.png'
+import noosoft from '../../assets/noosoft_logo.JPG'
 import PBS_certificate from '../../assets/PBS.pdf'
 import DataBase_certificate from '../../assets/SUBD_cert.pdf'
+import ScyTech_certificate from '../../assets/SCYTECH.pdf'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -24,6 +26,13 @@ const data = [
     file_name: 'PBS_certificate.pdf'
   },
   {
+    avatar: noosoft,
+    title: 'ScyTech. Хакатон молодых учёных',
+    review: 'Второе место на хакатоне молодых учёных от ScyTech. IT-кейс от NooSoft по разработке системы поиска по электронному архиву',
+    cert: ScyTech_certificate,
+    file_name: 'ScyTech_certificate.pdf'
+  },
+  {
     avatar: ORACLE,
     title: 'Oracle Databases',
     review: 'Награда за успешное завершение финального экзамена по курсу Database Foundations Cumulative Final Exam',
@@ -37,8 +46,8 @@ const data = [
 const Achievements = () => {
   return (
     <section id='achievements'>
-      <h5>Мои сертификаты</h5>
-      <h2>Достижения</h2>
+      <h5>Стажировки, кейс-чемпионаты, курсы</h5>
+      <h2>Certificates</h2>
 
       <Swiper className='container achievements__container'
       modules={[Pagination]}

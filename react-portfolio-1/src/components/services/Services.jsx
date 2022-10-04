@@ -4,94 +4,90 @@ import {TiTick} from 'react-icons/ti'
 
 const data_python = [
   {
-    skill: 'Принципы Объектно-оринтированного программирования'
+    skill: 'Принципы ООП'
   },
   {
-    skill: 'Списки, Словари, множества, выражения генераторы'
+    skill: 'Работы с данными в Pandas'
   },
   {
-    skill: 'Функциональное программирование: Lambda, Map, filter, reduce'
+    skill: 'Обработка данных в NumPy'
   },
   {
-    skill: 'Алгоритмы сортировки: bubble sort, merge sort, quick sort'
+    skill: 'SQLAlchemy и SQLite3'
   },
   {
-    skill: 'Обработка исключений (try, except), работа с файлами'
+    skill: 'Визуализация в Matplotlib'
   },
   {
-    skill: 'Хен-функции, хкширование данных, хеш-таблицы'
+    skill: 'SKlearn'
   },
-  {
-    skill: 'Pandas, SQLAlchemy'
-  },
+  
+  
 ]
 
 const data_sql = [
   {
-    skill: 'Типы моделей баз данных'
-  },
-  {
-    skill: 'Логическая модель'
-  },
-  {
-    skill: 'Реляционная модель'
-  },
-  {
-    skill: 'Oracle, SQLite'
+    skill: 'Реляционные БД'
   },
   {
     skill: 'Объекты, атрибуты, связи'
   },
   {
-    skill: 'SELECT, WHERE, ORDER BY, DISCTINCT, NVL'
+    skill: 'Извлечение данных'
   },
   {
-    skill: 'JOIN, LEFT, RIGHT, OUTER, NATURAL'
+    skill: 'Ограничения (WHERE)'
   },
   {
-    skill: 'GROUP BY, HAVING, COUNT, MAX, MIN, SUM'
+    skill: 'Сортировка (ORDER BY)'
   },
   {
-    skill: 'ROLLUP, CUBE, GROUPING SETS, SUBQUERRIES'
+    skill: 'Операторы сравнения'
   },
   {
-    skill: 'UNION, INTERSECT, MINUS'
+    skill: 'Соединения таблиц'
+  },
+  {
+    skill: 'Группировка, Функции'
+  },
+  {
+    skill: 'Операторы множеств'
+  },
+  {
+    skill: 'Подзапросы'
   },
 ]
 
-const data_DS = [
+const data_ML = [
   {
-    skill: 'Теория вероятностей'
+    skill: 'Supervised Learning'
   },
   {
-    skill: 'Математическое ожидание'
+    skill: 'Unsupervised learning'
   },
   {
-    skill: 'Математическая статистика'
+    skill: 'Линейная регрессия'
   },
   {
-    skill: 'Статистическая проверка гипотез'
+    skill: 'Метод градиентного спуска'
   },
   {
-    skill: 'Нормальное распределение'
+    skill: 'Классификация'
   },
   {
-    skill: 'Доверительные интервалы'
+    skill: 'Предобработка данных'
   },
   {
-    skill: 'Визуализация данных на языке R'
-  },
-  {
-    skill: 'Визуализация данных в Excel'
-  },
+    skill: 'Кластеризация данных'
+  }
 ]
 
 const Services = () => {
   return (
     
     <section id='services'>
-      <h5>Что я предлагаю</h5>
-      <h2>Знания</h2>
+      <h5>Знания</h5>
+      <h2>Knowledge</h2>
 
       <div className="container services__container">
         <article className="service">
@@ -132,11 +128,11 @@ const Services = () => {
 
         <article className="service">
           <div className="service__head">
-            <h3>Анализ данных</h3>
+            <h3>ML</h3>
           </div>
           <ul className="service__list">
             {
-              data_DS.map(({skill}) => {
+              data_ML.map(({skill}) => {
                 return (
                   <li>
                     <TiTick className='service__list-icon'/>

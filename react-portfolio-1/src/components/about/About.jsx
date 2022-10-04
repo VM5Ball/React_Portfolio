@@ -9,8 +9,8 @@ import PBS from '../../assets/PBS.pdf'
 const About = () => {
   return (
     <section id='about'>
-      <h5>Познакомимся</h5>
-      <h2>Обо мне</h2>
+      <h5>Обо мне</h5>
+      <h2>About me</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -45,7 +45,7 @@ const About = () => {
             </p>
 
             <a href="#contact" className='btn btn-primary'>Let's talk</a>
-            <a href={PBS} download='PBS_Certificate.pdf' className='btn left_margin' >PBS Certificate</a>
+            {/* <a href={PBS} download='PBS_Certificate.pdf' className='btn left_margin' >PBS Certificate</a> */}
           
         </div>
       </div>
