@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.css'
 import {BsTelegram} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
+import {GrLinkedinOption} from 'react-icons/gr'
 
 const Footer = () => {
   return (
@@ -21,6 +22,7 @@ const Footer = () => {
       <div className="footer__socials">
         <a href="https://t.me/markovich_vs" target="_blank"><BsTelegram className ='icon'/></a>  
         <a href="https://github.com/VM5Ball" target="_blank"><FaGithub className ='icon'/></a>
+        <a href="https://www.linkedin.com/in/markovichvs" target="_blank"><GrLinkedinOption className ='icon'/></a>
       </div>
 
 

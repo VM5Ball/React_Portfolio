@@ -13,58 +13,44 @@ const data_python = [
     skill: 'Обработка данных в NumPy'
   },
   {
-    skill: 'SQLAlchemy и SQLite3'
+    skill: 'SQLAlchemy'
   },
   {
-    skill: 'Визуализация в Matplotlib'
+    skill: 'Построение гистограмм'
   },
   {
-    skill: 'SKlearn'
+    skill: 'Функции агрегации'
   },
+  
   
   
 ]
 
-const data_sql = [
+const data_job = [
   {
-    skill: 'Реляционные БД'
+    skill: 'Автоматизация отчётности'
   },
   {
-    skill: 'Объекты, атрибуты, связи'
+    skill: 'Проверки качества данных'
   },
   {
-    skill: 'Извлечение данных'
+    skill: 'Анализ распределений'
   },
   {
-    skill: 'Ограничения (WHERE)'
+    skill: 'Очистка данных'
   },
   {
-    skill: 'Сортировка (ORDER BY)'
+    skill: 'Feature engineering'
   },
   {
-    skill: 'Операторы сравнения'
+    skill: 'Анализ рисков ипотечных активов'
   },
-  {
-    skill: 'Соединения таблиц'
-  },
-  {
-    skill: 'Группировка, Функции'
-  },
-  {
-    skill: 'Операторы множеств'
-  },
-  {
-    skill: 'Подзапросы'
-  },
+  
+  
+  
 ]
 
 const data_ML = [
-  {
-    skill: 'Supervised Learning'
-  },
-  {
-    skill: 'Unsupervised learning'
-  },
   {
     skill: 'Линейная регрессия'
   },
@@ -75,24 +61,33 @@ const data_ML = [
     skill: 'Классификация'
   },
   {
-    skill: 'Предобработка данных'
+    skill: 'Логистическая регрессия'
   },
   {
-    skill: 'Кластеризация данных'
-  }
+    skill: 'Метод опорных векторов'
+  },
+  {
+    skill: 'Линейный перцептрон'
+  },
+  {
+    skill: 'Свёрточные нейронные сети'
+  },
+  {
+    skill: 'Задачи CV и NLP'
+  },
 ]
 
 const Services = () => {
   return (
     
     <section id='services'>
-      <h5>Знания</h5>
-      <h2>Knowledge</h2>
+      <h5>Знания и опыт</h5>
+      <h2>Experience</h2>
 
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>Python</h3>
+            <h3>Python & SQL</h3>
           </div>
           <ul className="service__list">
             {
@@ -110,11 +105,11 @@ const Services = () => {
 
         <article className="service">
           <div className="service__head">
-            <h3>SQL</h3>
+            <h3>Аналитика</h3>
           </div>
           <ul className="service__list">
             {
-              data_sql.map(({skill}) => {
+              data_job.map(({skill}) => {
                 return (
                   <li>
                     <TiTick className='service__list-icon'/>

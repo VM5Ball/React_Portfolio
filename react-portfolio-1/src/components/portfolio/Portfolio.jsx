@@ -1,56 +1,33 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import './portfolio.css'
-import Portfolio_demo from '../../assets/Portfolio_demo.mp4'
-import ToDo from '../../assets/ToDo.mp4'
-import ScyTech from '../../assets/search_demo.mov'
-import PBS from '../../assets/PBS.mp4'
-import SUBD from '../../assets/DB.mp4'
-import toothpicks from '../../assets/ToothPicks.mp4'
+import Portfolio_demo from '../../assets/projects/WEB-SITE.png'
+import PBS from '../../assets/projects/PBS.jpeg'
+import PD_model from '../../assets/projects/PD_MODEL.png'
 
 const data = [
   {
     id: 1,
-    video: PBS,
-    title: 'PBS Blockchain',
+    logo: PBS,
+    title: 'Phystech Business Solutions. DeFi Analytics',
     github: "https://github.com/VM5Ball/DeFi_Analitics",
     
   },
   {
     id: 2,
-    video: Portfolio_demo,
-    title: 'ReactJS Portfolio',
-    github: "https://github.com/VM5Ball/React_Portfolio",
+    logo: PD_model,
+    title: 'Neural Network for Probability of Default prediction',
+    github: "https://github.com/VM5Ball/NeuralNetwork_PD_model/",
     
   },
   {
     id: 3,
-    video: ToDo,
-    title: 'ToDo list',
-    github: "https://github.com/VM5Ball/ToDo-App",
+    logo: Portfolio_demo,
+    title: 'Персональный веб-сайт портфолио на ReactJS',
+    github: "https://github.com/VM5Ball/React_Portfolio",
     
   },
-  {
-    id: 4,
-    video: ScyTech,
-    title: 'Система поиска по электронному архиву',
-    github: "https://github.com/VM5Ball/ScyTech",
-    
-  },
-  {
-    id: 5,
-    video: SUBD,
-    title: 'База данных фитнес-клуба',
-    github: "https://github.com/VM5Ball/Fitness-DataBase",
-    
-  },
-  {
-    id: 6,
-    video: toothpicks,
-    title: 'ToothPick Pattern',
-    github: "https://github.com/VM5Ball/Python_small_projects/tree/main/ToothPicks",
-    
-  },
+  
   
 ]
 
@@ -58,16 +35,17 @@ const Portfolio = () => {
   return (
     <section id ='portfolio'>
       <h5>Мои последние проекты</h5>
-      <h2>Projects</h2>
+      <h2>Portfolio</h2>
 
       <div className='container portfolio__container'>
 
         {
-          data.map(({id, video, title, github, }) => {
+          data.map(({id, logo, title, github, }) => {
             return (
               <article key={id} className='portfolio__item'>
               <div className="portfolio__item-image">
-              <ReactPlayer url={video} width='100%' height={200} controls muted />
+              {/* <ReactPlayer url={video} width='100%' height={200} controls muted /> */}
+                <img src={logo} alt="About Image" />
               </div>
               <h3>{title}</h3>
               <div className='portfolio__item-cta'>

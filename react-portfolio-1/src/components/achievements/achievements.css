@@ -15,7 +15,7 @@
 .achievement{
     background: var(--color-bg-variant);
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 2rem;
     user-select: none;
 }
@@ -30,6 +30,7 @@
 
 .btn__cert {
     margin-top: 1.3rem;
+    margin-right: 0.5rem; /* add this line */
 }
 
 

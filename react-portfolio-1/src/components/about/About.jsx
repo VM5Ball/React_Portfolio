@@ -1,16 +1,15 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.png'
+import ME from '../../assets/me/Маркович_В.С.jpeg'
 import {MdSchool} from 'react-icons/md'
 import {FaAward} from 'react-icons/fa'
 import {AiOutlineFolderOpen} from 'react-icons/ai'
-import PBS from '../../assets/PBS.pdf'
 
 const About = () => {
   return (
     <section id='about'>
-      <h5>Обо мне</h5>
-      <h2>About me</h2>
+      <h5>Основная информация обо мне</h5>
+      <h2>About</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -30,21 +29,21 @@ const About = () => {
 
             <article className='about__card'>
               <FaAward className='about__icon'/>
-              <h5>Достижения</h5>
-              <small>Чемпион кейс-чемпионата PBS по децентрализованным финансам</small>
+              <h5>Опыт</h5>
+              <small>Аналитик данных в Управлении Рисками в АО "ДОМ.РФ"</small>
             </article>
 
             <article className='about__card'>
               <AiOutlineFolderOpen className='about__icon'/>
               <h5>Проекты</h5>
-              <small>10+ Выполненных проектов</small>
+              <small>Построение моделей машинного обучения, нейронных сетей</small>
             </article>
             </div>
             <p className='text__about__me'>
-              Привет! Меня зовут Владимир, я занимаюсь разработкой на Python и аналитикой данных на SQL. В данных момент прохожу обучение в Финансовом Университете при Правительстве РФ по направлению "Прикладная информатика", изучаю информационные сервисы в финансовых структурах. Хочу начать получать опыт работы в разработке и аналитике данных в компании.
+              Меня зовут Володя, мне 22 года и я развиваюсь в области Data Science и Machine Learning. Обучаюсь в Финансовом Университете при Правительстве РФ на Факультете Информационных Технологий и Анализа Больших Данных по направлению "Прикладная информатика".
             </p>
 
-            <a href="#contact" className='btn btn-primary'>Let's talk</a>
+            {/* <a href="#contact" className='btn btn-primary'>Let's talk</a> */}
             {/* <a href={PBS} download='PBS_Certificate.pdf' className='btn left_margin' >PBS Certificate</a> */}
           
         </div>
