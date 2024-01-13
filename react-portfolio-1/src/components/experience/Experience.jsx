@@ -4,28 +4,28 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 
 const data_Python =[
   {
-    skill: 'Pandas',
-    level: 'Experinced'
-  },
-  {
-    skill: 'NumPy',
+    skill: 'Vertica',
     level: 'Experienced'
   },
   {
+    skill: 'MS SQL',
+    level: 'Experienced'
+  },
+  {
+    skill: 'Superset',
+    level: 'Experienced'
+  },
+  {
+    skill: 'Grafana',
+    level: 'Intermediate'
+  },
+  {
+    skill: 'ClickHouse',
+    level: 'Intermediate'
+  },
+  {
     skill: 'SQLAlchemy',
-    level: 'Experinced'
-  },
-  {
-    skill: 'xlwings',
-    level: 'Intermediate'
-  },
-  {
-    skill: 'Matplotlib',
-    level: 'Experinced'
-  },
-  {
-    skill: 'Seaborn',
-    level: 'Intermediate'
+    level: 'Experienced'
   },
   
 ]
@@ -33,21 +33,24 @@ const data_Python =[
 const data_ML =[
   {
     skill: 'SKLearn',
-    level: 'Experinced'
+    level: 'Experienced'
   },
   {
     skill: 'PyTorch',
     level: 'Experinced'
   },
   {
-    skill: 'TensorFlow',
-    level: 'Beginner'
+    skill: 'ML flow',
+    level: 'Experienced'
   },
   {
-    skill: 'TensorBoard',
-    level: 'Beginner'
-  }
-  
+    skill: 'Airflow',
+    level: 'Experienced'
+  },
+  {
+    skill: 'S3 Bucket',
+    level: 'Experienced'
+  },
 ]
 
 const Experience = () => {
@@ -60,7 +63,7 @@ const Experience = () => {
 
           <div className="experience__backend">
           <h3>
-            Python
+            DBM & Reporting
           </h3>
           <div className="experience__content">
 
@@ -82,7 +85,7 @@ const Experience = () => {
           
           <div className="experience__frontend">
           <h3>
-            ML
+            ML Infra
           </h3>
           <div className="experience__content">
             {
