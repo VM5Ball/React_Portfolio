@@ -51,6 +51,10 @@ const data_ML =[
     skill: 'S3 Bucket',
     level: 'Experienced'
   },
+  {
+    skill: 'Git',
+    level: 'Experienced'
+  },
 ]
 
 const Experience = () => {
