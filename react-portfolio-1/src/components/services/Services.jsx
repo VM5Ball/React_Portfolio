@@ -2,28 +2,79 @@ import React from 'react'
 import './services.css'
 import {TiTick} from 'react-icons/ti'
 
-const data_dbm = [
-  {skill: 'ETL'},
-  {skill: 'Query performance'},
-  {skill: 'SQLAlchemy'},
+const data_python = [
+  {
+    skill: 'Принципы ООП'
+  },
+  {
+    skill: 'Работы с данными в Pandas'
+  },
+  {
+    skill: 'Обработка данных в NumPy'
+  },
+  {
+    skill: 'SQLAlchemy'
+  },
+  {
+    skill: 'Построение гистограмм'
+  },
+  {
+    skill: 'Функции агрегации'
+  },
+  
+  
+  
+]
+
+const data_job = [
+  {
+    skill: 'Автоматизация отчётности'
+  },
+  {
+    skill: 'Проверки качества данных'
+  },
+  {
+    skill: 'Анализ распределений'
+  },
+  {
+    skill: 'Очистка данных'
+  },
+  {
+    skill: 'Feature engineering'
+  },
+  {
+    skill: 'Анализ рисков ипотечных активов'
+  },
+  
+  
+  
 ]
 
 const data_ML = [
-  {skill: 'PyTorch'},
-  {skill: 'Sci-kit Learn'},
-  {skill: 'Time Series Forecasting'},
-  {skill: 'Linear models'},
-  {skill: 'LightGBM'},
-  {skill: 'XGBoost'},
-  {skill: 'CatBoost'},
-]
-
-const data_reporting = [
-  {skill: 'Grafana'},
-  {skill: 'Superset'},
-  {skill: 'Matplotlib'},
-  {skill: 'Plotly Express'},
-  {skill: 'Seaborn'},
+  {
+    skill: 'Линейная регрессия'
+  },
+  {
+    skill: 'Метод градиентного спуска'
+  },
+  {
+    skill: 'Классификация'
+  },
+  {
+    skill: 'Логистическая регрессия'
+  },
+  {
+    skill: 'Метод опорных векторов'
+  },
+  {
+    skill: 'Линейный перцептрон'
+  },
+  {
+    skill: 'Свёрточные нейронные сети'
+  },
+  {
+    skill: 'Задачи CV и NLP'
+  },
 ]
 
 const Services = () => {
@@ -36,11 +87,11 @@ const Services = () => {
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>DBM</h3>
+            <h3>Python & SQL</h3>
           </div>
           <ul className="service__list">
             {
-              data_dbm.map(({skill}) => {
+              data_python.map(({skill}) => {
                 return (
                   <li>
                     <TiTick className='service__list-icon'/>
@@ -54,7 +105,25 @@ const Services = () => {
 
         <article className="service">
           <div className="service__head">
-            <h3>Python</h3>
+            <h3>Аналитика</h3>
+          </div>
+          <ul className="service__list">
+            {
+              data_job.map(({skill}) => {
+                return (
+                  <li>
+                    <TiTick className='service__list-icon'/>
+                    <p>{skill}</p>
+                  </li> 
+                )
+              })
+            } 
+          </ul>
+        </article>
+
+        <article className="service">
+          <div className="service__head">
+            <h3>ML</h3>
           </div>
           <ul className="service__list">
             {
@@ -70,23 +139,10 @@ const Services = () => {
           </ul>
         </article>
 
-        <article className="service">
-          <div className="service__head">
-            <h3>Reporting</h3>
-          </div>
-          <ul className="service__list">
-            {
-              data_reporting.map(({skill}) => {
-                return (
-                  <li>
-                    <TiTick className='service__list-icon'/>
-                    <p>{skill}</p>
-                  </li> 
-                )
-              })
-            } 
-          </ul>
-        </article>
+        
+
+        
+
       </div>
 
       </section>

@@ -30,7 +30,8 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon'/>
               <h5>Опыт</h5>
-              <small>ДОМ.РФ <br /> OZON </small>
+              <small>OZON</small><br/>
+              <small>АО "ДОМ.РФ"</small>
             </article>
 
             <article className='about__card'>
@@ -40,7 +41,7 @@ const About = () => {
             </article>
             </div>
             <p className='text__about__me'>
-              Меня зовут Володя, мне 22 года и я развиваюсь в области Data Science и Machine Learning. Обучаюсь в Финансовом Университете при Правительстве РФ на Факультете Информационных Технологий и Анализа Больших Данных по направлению "Прикладная информатика".
+              Меня зовут Володя, и я развиваюсь в области Data Science и Machine Learning. Окончил обучение в Финансовом Университете при Правительстве РФ на Факультете Информационных Технологий и Анализа Больших Данных по направлению "Прикладная информатика". На данный момент занимаюсь прогнозированием временных рядов.
             </p>
 
             {/* <a href="#contact" className='btn btn-primary'>Let's talk</a> */}

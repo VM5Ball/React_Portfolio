@@ -36,8 +36,7 @@
 }
 
 .service__list li {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     gap: 1rem;
     margin-bottom: 0.9rem;
 }

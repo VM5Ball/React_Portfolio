@@ -10,6 +10,9 @@ import DOM_RF_internship from '../../assets/certificates/BOOST.pdf'
 import DOM_RF_logo from '../../assets/certificates/logos/dom_rf_logo.jpeg'
 import GPB_logo from '../../assets/certificates/logos/GPB_logo.png'
 import GPB_cert from '../../assets/certificates/GPB.pdf'
+import Stepik_logo from '../../assets/certificates/logos/Stepik.png'
+import Stepik_BD_DS_cert from '../../assets/certificates/Stepik_BD_DS.pdf'
+import Statistics from '../../assets/certificates/Statistics.pdf'
 
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
@@ -56,6 +59,20 @@ const data = [
     review: 'Награда за успешное завершение финального экзамена по курсу Database Foundations Cumulative Final Exam',
     cert: DataBase_certificate,
     file_name: 'DataBase_certificate.pdf'
+  },
+  {
+    avatar: Stepik_logo,
+    title: 'Big Data и Data Science',
+    review: 'Завершение курса "Big Data и Data Science: перейди на новый уровень" с отличием',
+    cert: Stepik_BD_DS_cert,
+    file_name: 'Stepik_BD_DS.pdf'
+  },
+  {
+    avatar: Stepik_logo,
+    title: 'Основы статистики',
+    review: 'Завершение курса "Основы статистики" с отличием',
+    cert: Statistics,
+    file_name: 'Statistics.pdf'
   },
   
   

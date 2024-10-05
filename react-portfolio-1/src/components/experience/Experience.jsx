@@ -4,43 +4,27 @@ import {BsPatchCheckFill} from 'react-icons/bs'
 
 const data_Python =[
   {
-    skill: 'Vertica',
+    skill: 'Scikit-Learn',
     level: 'Experienced'
   },
   {
-    skill: 'MS SQL',
+    skill: 'CatBoost',
     level: 'Experienced'
   },
   {
-    skill: 'Superset',
+    skill: 'XGBoost',
     level: 'Experienced'
   },
   {
-    skill: 'Grafana',
-    level: 'Intermediate'
-  },
-  {
-    skill: 'ClickHouse',
-    level: 'Intermediate'
-  },
-  {
-    skill: 'SQLAlchemy',
-    level: 'Experienced'
-  },
-  
-]
-
-const data_ML =[
-  {
-    skill: 'SKLearn',
+    skill: 'LightGBM',
     level: 'Experienced'
   },
   {
     skill: 'PyTorch',
-    level: 'Experinced'
+    level: 'Experienced'
   },
   {
-    skill: 'ML flow',
+    skill: 'MlFlow',
     level: 'Experienced'
   },
   {
@@ -48,13 +32,45 @@ const data_ML =[
     level: 'Experienced'
   },
   {
-    skill: 'S3 Bucket',
-    level: 'Experienced'
+    skill: 'Optuna',
+    level: 'Intermediate'
+  },
+]
+
+const data_DBM =[
+  {
+    skill: 'ClickHouse',
+    level: 'Experinced'
   },
   {
-    skill: 'Git',
-    level: 'Experienced'
+    skill: 'Vertica',
+    level: 'Experinced'
   },
+  {
+    skill: 'Kafka',
+    level: 'Experinced'
+  },
+  {
+    skill: 'MS SQL',
+    level: 'Experinced'
+  },
+  {
+    skill: 'Gitlab',
+    level: 'Experinced'
+  },
+  {
+    skill: 'S3 Bucket',
+    level: 'Experinced'
+  },
+  {
+    skill: 'SuperSet',
+    level: 'Experinced'
+  },
+  {
+    skill: 'Grafana',
+    level: 'Experinced'
+  },
+  
 ]
 
 const Experience = () => {
@@ -67,7 +83,7 @@ const Experience = () => {
 
           <div className="experience__backend">
           <h3>
-            DBM & Reporting
+            Python
           </h3>
           <div className="experience__content">
 
@@ -89,11 +105,11 @@ const Experience = () => {
           
           <div className="experience__frontend">
           <h3>
-            ML Infra
+            Infra
           </h3>
           <div className="experience__content">
             {
-              data_ML.map(({skill, level}) => {
+              data_DBM.map(({skill, level}) => {
                 return (
                   <article className='experience__details'>
                     <BsPatchCheckFill className='experience__details-icon'/>
